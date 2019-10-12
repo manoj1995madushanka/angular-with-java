@@ -1,1 +1,5 @@
-<p>login works!</p>
+User name : <input type="text" name="username" [(ngModel)]="username">
+Password: <input type="password" name="password" [(ngModel)]="password">
+<button (click)="validate()">Login</button>
+
+<div *ngIf="setVisible">{{errormessage}}</div>
